@@ -1,0 +1,24 @@
+Connor Killman Flag Challenge
+
+Find the flag hidden in a file in the FlagDirecctory folder
+
+Flag Format: {exampleflag}
+pay attention to the flag Format
+
+do not mess with the 'CoreFiles' folder as it contains fragile files that
+ control the progression of the game
+
+essential programs: encfs, downloaded using: sudo apt install encfs
+					binwalk, downloaded using: sudo apt install binwalk
+
+useful commands: ls, find, binwalk, gunzip, mv, tar
+
+once the encfs password has been found, navigate to ~/home/yoursavelocation/CTF/
+ from there, enter this command to unlock the FlagDirectory folder:
+  encfs ~/Yoursavelocation/CTF/.CoreFiles/.FlagDirectory ~/YoursaveLocation/CTF/FlagDirectory
+
+useful datatables: oct to ascii converter, Spanish to English converter,
+ International Morse Code Translater, hex to Ascii Translator
+ 
+ note: in morse code, "/" means a space between words
+
